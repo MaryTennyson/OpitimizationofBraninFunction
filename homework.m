@@ -72,9 +72,7 @@ fprintf('k=2, x1=%f, x2=%f,f(x)=%f, abs. error=%f\n',x_next(1),x_next(2),func(x_
 
 k=3;
 while(norm(gradofbranin(x_next))>epsilon)
-    % if (norm(powellSingularGradient(x_next))=epsilon)
-    %     break;
-    % end
+    
     x = x_next;
     g = g_next;
     d = d_next;
@@ -185,9 +183,7 @@ fprintf('k=2, x1=%f, x2=%f,f(x)=%f, abs. error=%f\n',x_next(1),x_next(2),func(x_
 
 k=3;
 while(norm(gradofbranin(x_next))>epsilon)
-    % if (norm(powellSingularGradient(x_next))>epsilon)
-    %     break;
-    % end
+  
     x = x_next;
     g = g_next;
     d = d_next;
